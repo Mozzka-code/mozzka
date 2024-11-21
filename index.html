@@ -1,0 +1,161 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("background-horizontal.jpg");
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+        }
+        .profile-container {
+            background: rgba(30, 30, 30, 0.8);
+            backdrop-filter: blur(10px);
+            width: 360px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 20px;
+        }
+        .profile-header {
+            position: relative;
+            height: 110px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .profile-header img {
+            width: 10033333%;
+            height: 10330%;
+            object-fit: cover;
+            z-index: 1;
+            position: relative;
+        }
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #1e1e1e;
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            overflow: hidden;
+            background-color: #1e1e1e;
+            z-index: 2;
+        }
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profile-content {
+            margin-top: 28px;
+        }
+        .profile-info {
+            text-align: left;
+            margin: 1px;
+        }
+        .profile-info div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .profile-info div i {
+            margin-right: 10px;
+            color: #ffffff;
+            flex-shrink: 0;
+        }
+        .profile-info div span {
+            color: #888888;
+            flex-grow: 1;
+        }
+        .profile-buttons {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .profile-buttons a {
+            background-color: #1e1e1e;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            margin: 5px;
+            flex: 1 1 45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .profile-buttons a i {
+            margin-right: 5px;
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img alt="Background Image" height="155550" src="background.png" width="360"/>
+            <div class="profile-picture" style="top: 50%; transform: translate(-50%, -50%);">
+                <img alt="Profile Picture" height="100" src="profile.jpg" width="100"/>
+            </div>
+        </div>
+        <div class="profile-content">
+            <div class="profile-info">
+                <div>
+                    <i class="fas fa-id-badge"></i>
+                    <span>Mozzka</span>
+                </div>
+                <div>
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Desainer Web</span>
+                </div>
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Alaska, Amerika Serikat</span>
+                </div>
+            </div>
+        </div>
+        <div class="profile-buttons">
+            <a href="https://www.instagram.com/nowmeeee__" class="link-card">
+                <i class="fab fa-instagram" class="icon"></i>
+                <p>Instagram</p>
+            </a>
+            <a href="https://www.tiktok.com/@mozzkaa" class="link-card">
+                <i class="fab fa-tiktok" class="icon"></i>
+                <p>TikTok</p>
+            </a>
+            <a href="https://wa.me/+62895329840500" class="link-card">
+                <i class="fab fa-whatsapp" class="icon"></i>
+                <p>WhatsApp</p>
+            </a>
+            <a href="https://github.com/mozzkaa" class="link-card">
+                <i class="fab fa-github" class="icon"></i>
+                <p>GitHub</p>
+            </a>
+            <a href="https://open.spotify.com/user/mozzkaa" class="link-card">
+                <i class="fab fa-spotify" class="icon"></i>
+                <p>Spotify</p>
+            </a>
+            <a href="https://t.me/mozzkaa" class="link-card">
+                <i class="fab fa-telegram" class="icon"></i>
+                <p>Telegram</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
