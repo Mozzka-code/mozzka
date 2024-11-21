@@ -1,13 +1,16 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>Profile Page</title>
+    <link rel="icon" type="image/jpg" href="favicon.jpg" />
+    <link rel="icon" type="image/jpg" ref="https://mozzka-code.github.io/mozz/favicon.jpg" />
+    <title>M O Z Z K A</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-image: url("background-horizontal.jpg");
             background-size: cover;
             background-position: center;
+            backdrop-filter: blur(2px);
             margin: 0;
             padding: 0;
             display: flex;
@@ -15,6 +18,11 @@
             align-items: center;
             height: 100vh;
             color: #ffffff;
+        }
+        @media (max-width: 690px) {
+                body {
+                    background-image: url("background-vertikal.jpg");
+                }
         }
         .profile-container {
             background: rgba(30, 30, 30, 0.8);
@@ -30,13 +38,6 @@
             height: 110px;
             border-radius: 10px;
             overflow: hidden;
-        }
-        .profile-header img {
-            width: 10033333%;
-            height: 10330%;
-            object-fit: cover;
-            z-index: 1;
-            position: relative;
         }
         .profile-picture {
             width: 100px;
@@ -72,6 +73,7 @@
             margin-right: 10px;
             color: #ffffff;
             flex-shrink: 0;
+            align-items: center;
         }
         .profile-info div span {
             color: #888888;
@@ -85,11 +87,11 @@
         }
         .profile-buttons a {
             background-color: #1e1e1e;
-            border: 1px solid #ffffff;
+            backdrop-filter: blur(10px);
             color: #ffffff;
             border-radius: 10px;
             padding: 10px 20px;
-            font-size: 14px;
+            font-size: 13px;
             cursor: pointer;
             margin: 5px;
             flex: 1 1 45%;
@@ -97,9 +99,11 @@
             align-items: center;
             justify-content: center;
             text-decoration: none;
+            
         }
         .profile-buttons a i {
             margin-right: 5px;
+            font-size: 19px;
         }
     </style>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
@@ -109,7 +113,7 @@
 <body>
     <div class="profile-container">
         <div class="profile-header">
-            <img alt="Background Image" height="155550" src="background.png" width="360"/>
+            <img alt="Background Image" height="155550" src="q.png" width="360"/>
             <div class="profile-picture" style="top: 50%; transform: translate(-50%, -50%);">
                 <img alt="Profile Picture" height="100" src="profile.jpg" width="100"/>
             </div>
@@ -118,7 +122,7 @@
             <div class="profile-info">
                 <div>
                     <i class="fas fa-id-badge"></i>
-                    <span>Mozzka</span>
+                    <span>Yoga</span>
                 </div>
                 <div>
                     <i class="fas fa-laptop-code"></i>
@@ -126,7 +130,7 @@
                 </div>
                 <div>
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Alaska, Amerika Serikat</span>
+                    <span>Kediri, Jawa Timur</span>
                 </div>
             </div>
         </div>
@@ -143,11 +147,11 @@
                 <i class="fab fa-whatsapp" class="icon"></i>
                 <p>WhatsApp</p>
             </a>
-            <a href="https://github.com/mozzkaa" class="link-card">
+            <a href="https://github.com/Mozzka-code" class="link-card">
                 <i class="fab fa-github" class="icon"></i>
                 <p>GitHub</p>
             </a>
-            <a href="https://open.spotify.com/user/mozzkaa" class="link-card">
+            <a href="https://open.spotify.com/user/31nny5w6ugncbu2y4qsoaumir4t4?si=V4akiLFRT2CZkkTCfiMXvA" class="link-card">
                 <i class="fab fa-spotify" class="icon"></i>
                 <p>Spotify</p>
             </a>
@@ -155,7 +159,18 @@
                 <i class="fab fa-telegram" class="icon"></i>
                 <p>Telegram</p>
             </a>
-        </div>
+            <audio id="myAudio" autoplay loop>
+                <source src="music.mp3" type="audio/mpeg" />
+            </audio>
     </div>
+    <script>
+        function playAudio() {
+        var audio = document.getElementById("myAudio");
+        audio.muted = false;
+        audio.play();
+        }
+        document.body.addEventListener("click", playAudio);
+        document.body.addEventListener("touchstart", playAudio);
+    </script>
 </body>
 </html>
